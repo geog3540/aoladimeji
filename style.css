@@ -166,3 +166,28 @@ a:hover {
         height: 200px;
     }
 }
+
+.flow-writing {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 32px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
+
+.flow-writing h2 {
+    margin-top: 28px;
+    padding-left: 0;
+}
+
+.flow-writing h3 {
+    margin-top: 28px;
+    color: #173b63;
+}
+
+.flow-writing p {
+    padding: 0;
+    margin: 14px 0;
+    line-height: 1.7;
+}
