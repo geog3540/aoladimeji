@@ -1,0 +1,150 @@
+/* ===== General Page Style ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef6fb, #f8f4ef);
+    color: #2b2b2b;
+}
+
+/* ===== Main Container ===== */
+body > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Header ===== */
+h1 {
+    max-width: none;
+    margin: 0 0 30px 0;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1f3a5f, #2c7fb8);
+    color: white;
+    font-size: 38px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Section Headings ===== */
+h2 {
+    color: #1f3a5f;
+    margin-top: 35px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #f28c28;
+}
+
+h3 {
+    color: #1f3a5f;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 15px;
+}
+
+/* ===== Project Cards ===== */
+.project {
+    background: white;
+    margin: 25px 15px;
+    padding: 24px;
+    border-radius: 16px;
+    border-top: 6px solid #2c7fb8;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Alternate card accent colors */
+.project:nth-of-type(even) {
+    border-top-color: #f28c28;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #dddddd;
+    margin-top: 12px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.project img:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* ===== Links ===== */
+a {
+    color: #1f78b4;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f28c28;
+    text-decoration: underline;
+}
+
+/* ===== Navigation / Simple Link Buttons ===== */
+body > p a {
+    display: inline-block;
+    background-color: #1f3a5f;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 8px;
+    border-radius: 8px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+body > p a:hover {
+    background-color: #f28c28;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* ===== Flow Map Image Page ===== */
+.flow-map-img {
+    display: block;
+    margin: 25px auto;
+    max-width: 95%;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* ===== Footer ===== */
+footer {
+    max-width: none;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f3a5f;
+    color: white;
+}
+
+/* ===== Mobile Friendly Design ===== */
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 28px;
+        padding: 30px 15px;
+    }
+
+    .project {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }

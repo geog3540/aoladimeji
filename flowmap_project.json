@@ -1,0 +1,608 @@
+{
+  "projectName": "test project",
+  "date": "04/24/2026",
+  "onlineBaseMapSettings": {
+    "baseMap": "esriLightGray",
+    "projection": "abEqAreaAfc",
+    "ifDisplayReferences": true,
+    "baseMapOpacity": "100",
+    "ifAddTitle": true,
+    "title": "Internal Migration Flows in Rwanda (2010)",
+    "ifAddNorthArrow": false,
+    "ifAddProjectionLabel": false,
+    "ifUploadReferences": false,
+    "description": "Map Description",
+    "ifAddDescription": false,
+    "titleColor": "#000000",
+    "titleSize": "30",
+    "referenceField": "14",
+    "labelFontSize": "10",
+    "refRadius": "1",
+    "refColor": "#7d7d7d",
+    "refOpacity": 80,
+    "ifRefTop": false
+  },
+  "selfDesignedBaseMapSettings": {
+    "cfMethod": "Quantile",
+    "clrScheme": "Blues",
+    "minCustomColor": "#000000",
+    "maxCustomColor": "#000000",
+    "ifFlipColor": false,
+    "decimalPlaces": "0",
+    "clsNum": "5",
+    "fillOpacity": "100",
+    "strokeColor": "#000000",
+    "strokeWidth": 0.5,
+    "legendTitle": "Choropleth Map Legend",
+    "breakInput": "",
+    "ifHideNull": false,
+    "ifMapRegionAttribute": false,
+    "fillColorNoAttr": "#c2c2c2"
+  },
+  "pointMapFileSettings": {
+    "id": "IPUMSID",
+    "X": "POINT_X",
+    "Y": "POINT_Y",
+    "volume": "ISO",
+    "ifMapAttribute": false,
+    "cfMethod": "Proportional",
+    "clsNum": 5,
+    "clrScheme": "Black",
+    "minCustomColor": "#000000",
+    "maxCustomColor": "#000000",
+    "noAttrFillColor": "#c2c2c2",
+    "fillOpacity": "70",
+    "radiusMin": 2,
+    "radiusMax": 20,
+    "strokeColor": "#5a5a5a",
+    "ifFlipColor": false,
+    "strokeWidth": 1,
+    "decimalPlaces": 0,
+    "legendTitle": "Node Legend",
+    "breakInput": "",
+    "isDisplayedAsAbs": false,
+    "titleWidth": 200
+  },
+  "pointData": [
+    {
+      "ISO": "RWA",
+      "IPUMSID": "1",
+      "POINT_X": "29.77667962710",
+      "POINT_Y": "-2.55773071389"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "2",
+      "POINT_X": "30.33323478320",
+      "POINT_Y": "-1.50667598973"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "3",
+      "POINT_X": "29.10796853790",
+      "POINT_Y": "-2.47450236434"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "4",
+      "POINT_X": "29.47963524090",
+      "POINT_Y": "-2.50844620180"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "5",
+      "POINT_X": "29.40645935870",
+      "POINT_Y": "-1.78579802776"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "6",
+      "POINT_X": "29.79218720000",
+      "POINT_Y": "-2.07485419014"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "7",
+      "POINT_X": "30.60854055120",
+      "POINT_Y": "-2.04261107586"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "8",
+      "POINT_X": "29.38568190680",
+      "POINT_Y": "-2.09701461068"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "9",
+      "POINT_X": "30.12001013170",
+      "POINT_Y": "-2.03522573753"
+    },
+    {
+      "ISO": "RWA",
+      "IPUMSID": "10",
+      "POINT_X": "29.70174523650",
+      "POINT_Y": "-1.53088728788"
+    }
+  ],
+  "flowMapFileSettings": {
+    "origin": "ORIGIN",
+    "destination": "DESTINATION",
+    "volume": "VOLUME",
+    "flowStyleName": "curve",
+    "cfMethod": "Proportional",
+    "clrScheme": "Custom",
+    "minCustomColor": "#2c7fb8",
+    "maxCustomColor": "#2c7fb8",
+    "fillOpacity": "85",
+    "ifFlipColor": false,
+    "decimalPlaces": 0,
+    "clsNum": 5,
+    "numTopFlows": 50,
+    "breakInput": "",
+    "widthMax": 8,
+    "widthMin": 1,
+    "strokeWidth": 0.5,
+    "strokeColor": "#000000",
+    "legendTitle": "Migration Flow",
+    "isDisplayedAsAbs": false,
+    "originColor": "#0571b0",
+    "destinationColor": "#ca0020",
+    "flowLinGradMiddleColor": "#ffffff",
+    "flowLinGradMidFillOpacity": 100,
+    "flowLinGradStops": "2",
+    "titleWidth": 200
+  },
+  "flowData": [
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "2",
+      "VOLUME": "1193.078973"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "3",
+      "VOLUME": "1874.152526"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "4",
+      "VOLUME": "2793.930744"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "5",
+      "VOLUME": "1741.512933"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "6",
+      "VOLUME": "3815.591492"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "7",
+      "VOLUME": "1267.318116"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "8",
+      "VOLUME": "1050.25308"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "9",
+      "VOLUME": "9624.157277"
+    },
+    {
+      "ORIGIN": "1",
+      "DESTINATION": "10",
+      "VOLUME": "1346.32456"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "1",
+      "VOLUME": "1190.170202"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "3",
+      "VOLUME": "1043.773219"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "4",
+      "VOLUME": "982.62177"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "5",
+      "VOLUME": "1690.017501"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "6",
+      "VOLUME": "2085.171108"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "7",
+      "VOLUME": "3796.775113"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "8",
+      "VOLUME": "599.190438"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "9",
+      "VOLUME": "11650.16922"
+    },
+    {
+      "ORIGIN": "2",
+      "DESTINATION": "10",
+      "VOLUME": "4071.674612"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "1",
+      "VOLUME": "1880.66987"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "2",
+      "VOLUME": "1053.481816"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "4",
+      "VOLUME": "2769.318278"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "5",
+      "VOLUME": "1978.630864"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "6",
+      "VOLUME": "1706.619737"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "7",
+      "VOLUME": "943.2891901"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "8",
+      "VOLUME": "1600.019643"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "9",
+      "VOLUME": "3182.990416"
+    },
+    {
+      "ORIGIN": "3",
+      "DESTINATION": "10",
+      "VOLUME": "1185.141189"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "1",
+      "VOLUME": "2855.633648"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "2",
+      "VOLUME": "1009.275683"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "3",
+      "VOLUME": "2818.965732"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "5",
+      "VOLUME": "1901.218287"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "6",
+      "VOLUME": "3293.807443"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "7",
+      "VOLUME": "924.0712397"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "8",
+      "VOLUME": "1462.95548"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "9",
+      "VOLUME": "4355.615439"
+    },
+    {
+      "ORIGIN": "4",
+      "DESTINATION": "10",
+      "VOLUME": "1212.506928"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "1",
+      "VOLUME": "1637.438588"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "2",
+      "VOLUME": "1592.570962"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "3",
+      "VOLUME": "1853.138718"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "4",
+      "VOLUME": "1756.216293"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "6",
+      "VOLUME": "4228.690289"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "7",
+      "VOLUME": "1162.507569"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "8",
+      "VOLUME": "1751.208571"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "9",
+      "VOLUME": "5893.667722"
+    },
+    {
+      "ORIGIN": "5",
+      "DESTINATION": "10",
+      "VOLUME": "4337.57302"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "1",
+      "VOLUME": "3741.46192"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "2",
+      "VOLUME": "2050.527865"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "3",
+      "VOLUME": "1667.958174"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "4",
+      "VOLUME": "3171.067227"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "5",
+      "VOLUME": "4444.89752"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "7",
+      "VOLUME": "1731.720626"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "8",
+      "VOLUME": "1789.176219"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "9",
+      "VOLUME": "10854.13992"
+    },
+    {
+      "ORIGIN": "6",
+      "DESTINATION": "10",
+      "VOLUME": "4178.209304"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "1",
+      "VOLUME": "1261.579362"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "2",
+      "VOLUME": "3790.810996"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "3",
+      "VOLUME": "935.6008074"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "4",
+      "VOLUME": "904.2273725"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "5",
+      "VOLUME": "1235.118884"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "6",
+      "VOLUME": "1763.33931"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "8",
+      "VOLUME": "505.7530597"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "9",
+      "VOLUME": "10853.05725"
+    },
+    {
+      "ORIGIN": "7",
+      "DESTINATION": "10",
+      "VOLUME": "1351.714588"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "1",
+      "VOLUME": "1913.642815"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "2",
+      "VOLUME": "1094.175236"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "3",
+      "VOLUME": "2902.785077"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "4",
+      "VOLUME": "2617.13174"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "5",
+      "VOLUME": "3392.163323"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "6",
+      "VOLUME": "3321.788044"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "7",
+      "VOLUME": "925.538133"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "9",
+      "VOLUME": "4798.313203"
+    },
+    {
+      "ORIGIN": "8",
+      "DESTINATION": "10",
+      "VOLUME": "2072.190853"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "1",
+      "VOLUME": "4580.316299"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "2",
+      "VOLUME": "5611.113555"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "3",
+      "VOLUME": "1521.140944"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "4",
+      "VOLUME": "2052.467478"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "5",
+      "VOLUME": "3006.371748"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "6",
+      "VOLUME": "5309.763699"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "7",
+      "VOLUME": "5229.818612"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "8",
+      "VOLUME": "1267.929029"
+    },
+    {
+      "ORIGIN": "9",
+      "DESTINATION": "10",
+      "VOLUME": "5050.976792"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "1",
+      "VOLUME": "1279.025918"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "2",
+      "VOLUME": "3893.866035"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "3",
+      "VOLUME": "1126.23192"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "4",
+      "VOLUME": "1136.644601"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "5",
+      "VOLUME": "4397.364582"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "6",
+      "VOLUME": "4060.201971"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "7",
+      "VOLUME": "1294.613201"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "8",
+      "VOLUME": "1088.449407"
+    },
+    {
+      "ORIGIN": "10",
+      "DESTINATION": "9",
+      "VOLUME": "10110.40353"
+    }
+  ]
+}
