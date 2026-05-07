@@ -79,7 +79,7 @@ h2 {
 .project img {
     display: block;
     width: 88%;
-    height: 230px;
+    height: auto;
     object-fit: contain;
     margin: 18px auto;
     border-radius: 12px;
@@ -163,7 +163,7 @@ a:hover {
     }
 
     .project img {
-        height: 200px;
+        height: auto;
     }
 }
 
@@ -191,3 +191,60 @@ a:hover {
     margin: 14px 0;
     line-height: 1.7;
 }
+
+.project {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.project img {
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain;
+}
+
+.project-description {
+    margin: 18px 22px 25px 22px !important;
+    padding: 0 !important;
+}
+
+.project-description p {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    line-height: 1.6 !important;
+}
+
+.project-description details {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.project-description summary {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;
+    color: #2c7fb8;
+    font-weight: 700;
+    list-style: none;
+}
+
+.project-description summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-description summary:hover {
+    color: #f28c28;
+}
+
+.project-description details[open] summary {
+    display: none !important;
+}
+
+.project-description details p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.6 !important;
