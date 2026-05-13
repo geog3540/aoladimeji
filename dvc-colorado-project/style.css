@@ -1,170 +1,22 @@
-:root {
-  --navy: #123043;
-  --blue: #1f5f73;
-  --teal: #2a9d8f;
-  --soft: #f4f7f9;
-  --orange: #e07a2f;
-  --text: #263238;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--soft);
-  color: var(--text);
-  line-height: 1.6;
-  padding-top: 64px;
-}
-
-.navbar {
-  background: var(--navy);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-}
-
-.hero {
-  background: linear-gradient(120deg, var(--navy), var(--blue));
-  color: white;
-  padding: 70px 0 60px;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  max-width: 900px;
-}
-
-.hero p {
-  max-width: 850px;
-  font-size: 1.1rem;
-}
-
-main.container {
-  max-width: 1140px;
-}
-
-.section {
-  padding: 42px 0;
-}
-
-.section h2 {
-  color: var(--navy);
-  font-weight: 800;
-  margin-bottom: 24px;
-  padding-bottom: 10px;
-  border-bottom: 4px solid var(--orange);
-}
-
-.question-box,
-.viz-card {
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 28px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-
-.viz-card h3 {
-  color: var(--navy);
-  font-weight: 800;
-  margin-bottom: 16px;
-}
-
-/* General images */
-.viz-card img {
-  display: block;
+.project-card .card-img-fixed,
+.kde-wide-img {
   width: 100%;
-  max-width: 780px;
-  max-height: 420px;
-  object-fit: contain;
-  margin: 0 auto 18px auto;
-  background: white;
-}
-
-/* Permanent hotspot map fix */
-.viz-card img.hotspot-img {
-  width: 220px !important;
-  max-width: 100% !important;
-  height: auto !important;
-  max-height: 320px !important;
-  object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto 18px auto !important;
-}
-
-/* Observable */
-.observable-frame {
-  width: 100%;
-  height: 490px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 14px;
+  height: 260px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 
-.observable-frame iframe {
+.project-card .card-img-fixed img,
+.kde-wide-img img {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+  display: block;
 }
 
-.observable-frame.tall {
-  height: 680px;
-}
-
-/* Findings */
-.finding-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.finding-grid div {
-  background: white;
-  padding: 22px;
-  border-radius: 14px;
-  border-left: 5px solid var(--teal);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-/* Footer */
-footer {
-  background: var(--navy);
-  color: white;
-  text-align: center;
-  padding: 22px;
-  margin-top: 10px;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-
-  .finding-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-}
-
-@media (max-width: 600px) {
-
-  .finding-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .observable-frame {
-    height: 440px;
-  }
-
-  .viz-card img.hotspot-img {
-    width: 100% !important;
-    max-height: 260px !important;
-  }
-
+.kde-wide-img img {
+  object-fit: contain !important;
 }
