@@ -40,10 +40,24 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.14);
     }
 
-    .project-card img {
-      height: 230px;
-      object-fit: cover;
+    /* UPDATED IMAGE CONTAINER */
+    .project-card .card-img-fixed {
       width: 100%;
+      height: 260px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    /* UPDATED IMAGE STYLE */
+    .project-card .card-img-fixed img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .badge-custom {
@@ -64,7 +78,7 @@
 
 <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Akinwale's Portfolio</a>
+    <a class="navbar-brand fw-bold" href="index.html">Colorado DVC Risk</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -86,7 +100,7 @@
         <span class="badge bg-light text-dark mb-3">Geovisualization Final Project</span>
         <h1 class="display-5 fw-bold">Deer–Vehicle Collision Risk Across Colorado</h1>
         <p class="lead mt-3">
-          This project uses interactive maps, hotspot analysis, and statistical graphics to examine how deer–vehicle collisions vary across Colorado’s counties, roads, and transportation corridors.
+          This project uses interactive maps, hotspot analysis, and statistical graphics to examine how deer–vehicle collisions varied across Colorado counties, roads, and transportation corridors between 2022 and 2025.
         </p>
         <a href="https://observablehq.com/d/6e213c864228b4c7" class="btn btn-light btn-lg mt-3" target="_blank">
           Open Full Observable Notebook
@@ -101,7 +115,7 @@
   <section class="mb-5">
     <h2 class="section-title">Project Story</h2>
     <p class="fs-5">
-      The project asks where deer–vehicle collisions occur, whether collision risk is simply explained by population patterns, and how roadway corridors and vehicle speed shape collision burden. Rather than relying on one map, the project combines point-level mapping, hotspot surfaces, normalized rates, bivariate mapping, and linked visual analytics.
+      This project examines where deer–vehicle collisions occur across Colorado, whether collision risk is influenced by population patterns, and how roadway corridors and vehicle speed shape collision burden. Rather than relying on a single visualization, the project combines point-level mapping, hotspot analysis, normalized risk mapping, bivariate visualization, and coordinated geovisual analytics to explore spatial patterns and relationships across the state.
     </p>
   </section>
 
@@ -110,97 +124,188 @@
 
     <div class="row g-4">
 
+      <!-- CARD 1 -->
       <div class="col-md-6 col-lg-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#cell-83" target="_blank" class="card-img-fixed">
-  <img src="images/raw_dvc.png" alt="Raw DVC map">
-</a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Collision Distribution</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#cell-83" target="_blank" class="text-decoration-none text-dark">Raw DVC Distribution Across Colorado</a></h5>
-            <p class="card-text">
-              This choropleth map visualizes total deer–vehicle collisions across Colorado counties. The visualization highlights where collision counts are highest, while also showing why raw totals should be interpreted carefully before accounting for population and exposure.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="card project-card">
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#popDensityMap" target="_blank">
-            <img src="images/pop_density.png" alt="Population Density Map">
+        <a href="https://observablehq.com/d/6e213c864228b4c7#cell-83"
+           target="_blank"
+           class="card-img-fixed">
+          <img src="images/raw_dvc.png" alt="Raw DVC map">
+        </a>
+
+        <div class="card-body">
+          <span class="badge badge-custom mb-2">Collision Distribution</span>
+
+          <h5>
+            <a href="https://observablehq.com/d/6e213c864228b4c7#cell-83"
+               target="_blank"
+               class="text-decoration-none text-dark">
+              Raw DVC Distribution Across Colorado
+            </a>
+          </h5>
+
+          <p class="card-text">
+            This choropleth map visualizes total deer–vehicle collisions across Colorado counties. The visualization highlights where collision counts are highest, while also showing why raw totals should be interpreted carefully before accounting for population and exposure.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+
+      <a href="https://observablehq.com/d/6e213c864228b4c7#popDensityMap"
+         target="_blank"
+         class="card-img-fixed">
+        <img src="images/pop_density.png" alt="Population Density Map">
+      </a>
+
+      <div class="card-body">
+        <span class="badge badge-custom mb-2">Population Exposure</span>
+
+        <h5>
+          <a href="https://observablehq.com/d/6e213c864228b4c7#popDensityMap"
+             target="_blank"
+             class="text-decoration-none text-dark">
+            Population Density Map
           </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Population Exposure</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#popDensityMap_LINK" target="_blank" class="text-decoration-none text-dark">Population Density Map</a></h5>
-            <p class="card-text">
-              This choropleth map visualizes population density across Colorado counties. The visualization helps compare human concentration with deer–vehicle collision patterns and provides an exposure-related context for interpreting collision risk.
-            </p>
-          </div>
-        </div>
+        </h5>
+
+        <p class="card-text">
+          This choropleth map visualizes population density across Colorado counties. The visualization helps compare human concentration with deer–vehicle collision patterns and provides an exposure-related context for interpreting collision risk.
+        </p>
       </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#dotMap" target="_blank">
-            <img src="images/dot_map.png" alt="Interactive dot map">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Interactive Point Map</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#dotMap" target="_blank" class="text-decoration-none text-dark">Interactive Dot Map</a></h5>
-            <p class="card-text">
-              This interactive dot map visualizes individual deer–vehicle collision locations across Colorado. The visualization reveals strong roadway corridor patterns and spatial clustering that are often hidden in aggregated county-level maps, allowing users to explore fine-scale transportation and wildlife interaction patterns.
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
-<div class="col-md-6 col-lg-4">
+
+  <!-- CARD 3 -->
+  <div class="col-md-6 col-lg-4">
   <div class="card project-card">
-    <a href="https://observablehq.com/d/6e213c864228b4c7#kdeHotspotMap" target="_blank">
-      <img src="images/kdeHotspotMap.png" alt="KDE hotspot map">
+
+    <a href="https://observablehq.com/d/6e213c864228b4c7#dotMap"
+       target="_blank"
+       class="card-img-fixed">
+      <img src="images/dot_map.png" alt="Interactive dot map">
     </a>
+
     <div class="card-body">
-      <span class="badge badge-custom mb-2">Hotspot Analysis</span>
-      <h5><a href="https://observablehq.com/d/6e213c864228b4c7#kdeHotspotMap" target="_blank" class="text-decoration-none text-dark">KDE Hotspot Map</a></h5>
+      <span class="badge badge-custom mb-2">Interactive Point Map</span>
+
+      <h5>
+        <a href="https://observablehq.com/d/6e213c864228b4c7#dotMap"
+           target="_blank"
+           class="text-decoration-none text-dark">
+          Interactive Dot Map
+        </a>
+      </h5>
+
       <p class="card-text">
-        This hotspot map identifies areas where deer–vehicle collisions are spatially concentrated across Colorado. The visualization highlights persistent high-intensity collision corridors and reveals regional clustering patterns that may reflect roadway structure, wildlife movement, and transportation activity.
+        This interactive dot map visualizes individual deer–vehicle collision locations across Colorado. The visualization reveals strong roadway corridor patterns and spatial clustering that are often hidden in aggregated county-level maps, allowing users to explore fine-scale transportation and wildlife interaction patterns.
       </p>
     </div>
+
   </div>
 </div>
 
 
+<!-- CARD 4 -->
+<div class="col-md-6 col-lg-4">
+<div class="card project-card">
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#riskMapEmbed" target="_blank">
-            <img src="images/RiskMap.png" alt="Normalized DVC risk map">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Normalized Risk</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#riskMapEmbed" target="_blank" class="text-decoration-none text-dark">Normalized DVC Risk Map</a></h5>
-            <p class="card-text">
-              This choropleth map visualizes normalized deer–vehicle collision risk using DVCs per 10,000 people across Colorado counties. The visualization reveals counties that experience disproportionately high collision burden relative to population size, allowing more meaningful comparison than raw collision totals alone.
-            </p>
-          </div>
-        </div>
-      </div>
+  <a href="https://observablehq.com/d/6e213c864228b4c7#kdeHotspotMap"
+     target="_blank"
+     class="card-img-fixed">
+    <img src="images/kdeHotspotMap.png" alt="KDE hotspot map">
+  </a>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#bivariateMapEmbed" target="_blank">
-            <img src="images/bivariate_dvc_map.png" alt="Bivariate DVC map">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Bivariate Map</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#bivariateMapEmbed" target="_blank" class="text-decoration-none text-dark">Bivariate Risk Map</a></h5>
-            <p class="card-text">
-              This bivariate map examines the spatial relationship between population density and normalized deer–vehicle collision risk across Colorado counties. The visualization reveals areas where high population density and elevated collision burden overlap, while also identifying important spatial contrasts and regional outliers.
-            </p>
-          </div>
-        </div>
-      </div>
+  <div class="card-body">
+    <span class="badge badge-custom mb-2">Interactive Point Map</span>
+
+    <h5>
+      <a href="https://observablehq.com/d/6e213c864228b4c7#kdeHotspotMap"
+         target="_blank"
+         class="text-decoration-none text-dark">
+        KDE Hotspot Map
+      </a>
+    </h5>
+
+    <p class="card-text">
+      This hotspot map identifies areas where deer–vehicle collisions are spatially concentrated across Colorado. The visualization highlights persistent high-intensity collision corridors and reveals regional clustering patterns that may reflect roadway structure, wildlife movement, and transportation activity.
+    </p>
+  </div>
+
+</div>
+</div>
+
+
+
+<!-- CARD 5 -->
+<div class="col-md-6 col-lg-4">
+<div class="card project-card">
+
+  <a href="https://observablehq.com/d/6e213c864228b4c7#riskMapEmbed"
+     target="_blank"
+     class="card-img-fixed">
+    <img src="images/RiskMap.png" alt="Normalized DVC risk map">
+  </a>
+
+  <div class="card-body">
+    <span class="badge badge-custom mb-2">Normalized Risk</span>
+
+    <h5>
+      <a href="https://observablehq.com/d/6e213c864228b4c7#riskMapEmbed"
+         target="_blank"
+         class="text-decoration-none text-dark">
+        Normalized DVC Risk Map
+      </a>
+    </h5>
+
+    <p class="card-text">
+      This choropleth map visualizes normalized deer–vehicle collision risk using DVCs per 10,000 people across Colorado counties. The visualization reveals counties that experience disproportionately high collision burden relative to population size, allowing more meaningful comparison than raw collision totals alone.
+    </p>
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+<!-- CARD 6 -->
+<div class="col-md-6 col-lg-4">
+<div class="card project-card">
+
+  <a href="https://observablehq.com/d/6e213c864228b4c7#bivariateMapEmbed"
+     target="_blank"
+     class="card-img-fixed">
+    <img src="images/bivariate_dvc_map.png" alt="Bivariate DVC map">
+  </a>
+
+  <div class="card-body">
+    <span class="badge badge-custom mb-2">Bivariate Map</span>
+
+    <h5>
+      <a href="https://observablehq.com/d/6e213c864228b4c7#bivariateMapEmbed"
+         target="_blank"
+         class="text-decoration-none text-dark">
+        Bivariate Risk Map
+      </a>
+    </h5>
+
+    <p class="card-text">
+      This bivariate map examines the spatial relationship between population density and normalized deer–vehicle collision risk across Colorado counties. The visualization reveals areas where high population density and elevated collision burden overlap, while also identifying important spatial contrasts and regional outliers.
+    </p>
+  </div>
+
+</div>
+</div>
 
     </div>
   </section>
@@ -210,52 +315,98 @@
 
     <div class="row g-4">
 
-      <div class="col-md-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#scatterPlotEmbed" target="_blank">
-            <img src="images/ScatterPlot.png" alt="Population density and DVC risk scatterplot">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Relationship Analysis</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#scatterPlotEmbed" target="_blank" class="text-decoration-none text-dark">Population Density vs DVC Risk</a></h5>
-            <p>
-              This scatterplot examines the relationship between population density and normalized deer–vehicle collision risk across Colorado counties. The visualization suggests that collision burden is not solely driven by population concentration, while also revealing substantial variability and several high-risk outlier counties.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#speedRiskScatter" target="_blank">
-            <img src="images/speedRiskScatter.png" alt="Speed and collision burden scatterplot">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Speed Analysis</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#speedRiskScatter" target="_blank" class="text-decoration-none text-dark">Speed and Collision Burden</a></h5>
-            <p>
-              <p>
-This scatterplot examines the relationship between average estimated roadway speed and normalized deer–vehicle collision risk across Colorado counties. The visualization suggests that counties with higher roadway speeds generally tend to experience greater collision burden per 10,000 people, while also revealing substantial variability and several high-risk outlier counties.
-</p>
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card project-card">
-          <a href="https://observablehq.com/d/6e213c864228b4c7#rankedRoadChart" target="_blank">
-            <img src="images/corridor_ranking.png" alt="Corridor ranking bar chart">
-          </a>
-          <div class="card-body">
-            <span class="badge badge-custom mb-2">Corridor Ranking</span>
-            <h5><a href="https://observablehq.com/d/6e213c864228b4c7#rankedRoadChart" target="_blank" class="text-decoration-none text-dark">Top Collision Corridors</a></h5>
-            <p>
-              This bar chart ranks major roadway corridors by total deer–vehicle collisions across Colorado. The visualization highlights transportation corridors that experience disproportionately high collision burden and helps connect mapped spatial patterns with roadway infrastructure and traffic movement.
-            </p>
-          </div>
+
+      <!-- CARD 6 -->
+      <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/6e213c864228b4c7#scatterPlotEmbed"
+           target="_blank"
+           class="card-img-fixed">
+          <img src="images/ScatterPlot.png" alt="Population density and DVC risk scatterplot">
+        </a>
+
+        <div class="card-body">
+          <span class="badge badge-custom mb-2">Relationship Analysis</span>
+
+          <h5>
+            <a href="https://observablehq.com/d/6e213c864228b4c7#scatterPlotEmbed"
+               target="_blank"
+               class="text-decoration-none text-dark">
+              Population Density vs DVC Risk
+            </a>
+          </h5>
+
+          <p class="card-text">
+            This scatterplot examines the relationship between population density and normalized deer–vehicle collision risk across Colorado counties. The visualization suggests that collision burden is not solely driven by population concentration, while also revealing substantial variability and several high-risk outlier counties.
+          </p>
         </div>
       </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+
+      <a href="https://observablehq.com/d/6e213c864228b4c7#speedRiskScatter"
+         target="_blank"
+         class="card-img-fixed">
+        <img src="images/speedRiskScatter.png" alt="Speed and collision burden scatterplot">
+      </a>
+
+      <div class="card-body">
+        <span class="badge badge-custom mb-2">Speed Analysis</span>
+
+        <h5>
+          <a href="https://observablehq.com/d/6e213c864228b4c7#speedRiskScatter"
+             target="_blank"
+             class="text-decoration-none text-dark">
+            Speed and Collision Burden
+          </a>
+        </h5>
+
+        <p class="card-text">
+          This scatterplot examines the relationship between average estimated roadway speed and normalized deer–vehicle collision risk across Colorado counties. The visualization suggests that counties with higher roadway speeds generally tend to experience greater collision burden per 10,000 people, while also revealing substantial variability and several high-risk outlier counties.
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="col-md-6 col-lg-4">
+    <div class="card project-card">
+
+      <a href="https://observablehq.com/d/6e213c864228b4c7#rankedRoadChart"
+         target="_blank"
+         class="card-img-fixed">
+        <img src="images/corridor_ranking.png" alt="Corridor ranking bar chart">
+      </a>
+
+      <div class="card-body">
+        <span class="badge badge-custom mb-2">Corridor Ranking</span>
+
+        <h5>
+          <a href="https://observablehq.com/d/6e213c864228b4c7#rankedRoadChart"
+             target="_blank"
+             class="text-decoration-none text-dark">
+            Top Collision Corridors
+          </a>
+        </h5>
+
+        <p class="card-text">
+          This bar chart ranks major roadway corridors by total deer–vehicle collisions across Colorado. The visualization highlights transportation corridors that experience disproportionately high collision burden and helps connect mapped spatial patterns with roadway infrastructure and traffic movement.
+        </p>
+      </div>
+    </div>
+    </div>
+
 
     </div>
   </section>
@@ -289,7 +440,7 @@ This scatterplot examines the relationship between average estimated roadway spe
     <ul class="fs-5">
       <li>Collision points reveal strong corridor-based clustering that is hidden in county-level maps.</li>
       <li>Normalized DVC risk shows that some lower-population counties experience disproportionately high collision burden.</li>
-      <li>The bivariate map shows that population density and collision risk do not always overlap spatially.</li>
+      <li>The bivariate map shows that population density and collision risk do not consistently overlap spatially.</li>
       <li>Roadway corridor rankings help translate mapped patterns into transportation-relevant findings.</li>
     </ul>
   </section>
