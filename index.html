@@ -1,135 +1,371 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Geovisualization Portfolio / Akinwale</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Akinwale Geovisualization Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Geovisualization Portfolio</h1>
+<!-- NAVBAR -->
 
-<p>
-Welcome to my geovisualization portfolio. This website presents selected mapping assignments completed for SEES 3540. The projects demonstrate different cartographic techniques, including choropleth mapping, point symbol mapping, isarithmic mapping, bivariate mapping, and flow mapping.
-</p>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
 
-<p>
-The projects were developed using HTML, CSS, JavaScript, Observable, and FlowMapper to create web-based and interactive cartographic visualizations.
-</p>
+    <a class="navbar-brand fw-bold" href="#">
+      Akinwale Geovisualization Portfolio
+    </a>
 
-<h2>Mapping Projects</h2>
+  </div>
+</nav>
 
-<div class="project-grid">
+<!-- HERO SECTION -->
 
-    <div class="project">
-        <h3>Choropleth Mapping</h3>
-        <a href="https://observablehq.com/d/c55e424d7cc35248">
-            <img src="images/choroplethmap.png" alt="Choropleth map">
+<header class="hero">
+  <div class="container">
+
+    <h1>
+      Geovisualization Portfolio
+    </h1>
+
+    <p class="lead">
+      Interactive mapping, spatial analysis, and geovisual analytics projects developed using Observable, D3, Bootstrap, GIS, and web cartography techniques.
+    </p>
+
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+
+<div class="container my-5">
+
+  <!-- SECTION TITLE -->
+
+  <h2 class="section-title">
+    Mapping Assignments
+  </h2>
+
+  <!-- PROJECT CARDS -->
+
+  <div class="row g-4">
+
+    <!-- Choropleth Mapping -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/c55e424d7cc35248#choropleth" target="_blank">
+          <img src="images/choroplethmap.png"
+               alt="Choropleth mapping">
         </a>
 
-        <div class="project-description">
-            <p>
+        <div class="card-body">
+
+          <span class="badge badge-custom mb-2">
+            Choropleth Mapping
+          </span>
+
+          <h5>
+            <a href="https://observablehq.com/d/c55e424d7cc35248#choropleth"
+               target="_blank">
+
+              Choropleth Mapping
+
+            </a>
+          </h5>
+
+          <p>
             This choropleth map shows population density across Dane County, with the highest values concentrated in central Madison.
-            </p>
 
-            <details>
-                <summary>Show more</summary>
-                <p>
-                Density decreases outward into surrounding suburban and rural areas, creating a clear urban-to-rural gradient. The map highlights how population is strongly concentrated in the urban core and becomes more dispersed toward the county edges.
-                </p>
-            </details>
+Density decreases outward into surrounding suburban and rural areas, creating a clear urban-to-rural gradient. The map highlights how population is strongly concentrated in the urban core and becomes more dispersed toward the county edges.
+          </p>
+
         </div>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Point Symbol Mapping</h3>
-        <a href="https://observablehq.com/d/2de4d50df98398b6">
-            <img src="images/pointsymbol.png" alt="Proportional symbol map">
+    <!-- Point Symbol Mapping -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/2de4d50df98398b6#symbol_map" target="_blank">
+          <img src="images/pointsymbol.png"
+               alt="Point symbol mapping">
         </a>
 
-        <div class="project-description">
-            <p>
-            This map shows animal&ndash;vehicle collision counts across Iowa counties using proportional symbols.
-            </p>
+        <div class="card-body">
 
-            <details>
-                <summary>Show more</summary>
-                <p>
-                Higher counts are concentrated in eastern and central counties such as Linn, Scott, Johnson, and Polk, where urban areas and major roads increase traffic exposure. Lower counts occur in many western and northwestern counties, suggesting that collision risk is closely related to road density, traffic volume, and the overlap between human activity and wildlife movement.
-                </p>
-            </details>
+          <span class="badge badge-custom mb-2">
+            Point Symbol Mapping
+          </span>
+
+          <h5>
+            <a href="https://observablehq.com/d/2de4d50df98398b6#symbol_map"
+               target="_blank">
+
+              Point Symbol Mapping
+
+            </a>
+          </h5>
+
+          <p>
+            This map shows animal–vehicle collision counts across Iowa counties using proportional symbols.
+
+Higher counts are concentrated in eastern and central counties such as Linn, Scott, Johnson, and Polk, where urban areas and major roads increase traffic exposure. Lower counts occur in many western and northwestern counties, suggesting that collision risk is closely related to road density, traffic volume, and the overlap between human activity and wildlife movement.
+          </p>
+
         </div>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Isarithmic Mapping</h3>
-        <a href="https://observablehq.com/d/aeb717314d857435">
-            <img src="images/isarithmic.png" alt="Isarithmic map">
+    <!-- Isarithmic Mapping -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/aeb717314d857435#cell-673" target="_blank">
+          <img src="images/isarithmic.png"
+               alt="Isarithmic mapping">
         </a>
 
-        <div class="project-description">
-            <p>
-            This isarithmic map shows mean annual temperature across Colorado, ranging from about -3&deg;C to 13&deg;C.
-            </p>
+        <div class="card-body">
 
-            <details>
-                <summary>Show more</summary>
-                <p>
-                The coldest values occur in the Rocky Mountains due to higher elevation, while temperatures increase toward the eastern plains. The map reveals a strong west-to-east temperature gradient, with steep changes along the mountain front and more gradual variation across the plains.
-                </p>
-            </details>
+          <span class="badge badge-custom mb-2">
+            Isarithmic Mapping
+          </span>
+
+          <h5>
+            <a href="https://observablehq.com/d/aeb717314d857435#cell-673"
+               target="_blank">
+
+              Isarithmic Mapping
+
+            </a>
+          </h5>
+
+          <p>
+            This isarithmic map shows mean annual temperature across Colorado, ranging from about -3°C to 13°C.
+
+The coldest values occur in the Rocky Mountains due to higher elevation, while temperatures increase toward the eastern plains. The map reveals a strong west-to-east temperature gradient, with steep changes along the mountain front and more gradual variation across the plains.
+          </p>
+
         </div>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Bivariate Mapping</h3>
-        <a href="https://observablehq.com/d/7b271f18e7b1ec3b">
-            <img src="images/Bivariate.png" alt="Bivariate map">
+    <!-- Bivariate Mapping -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/7b271f18e7b1ec3b#chart" target="_blank">
+          <img src="images/bivariate.png"
+               alt="Bivariate mapping">
         </a>
 
-        <div class="project-description">
-            <p>
+        <div class="card-body">
+
+          <span class="badge badge-custom mb-2">
+            Bivariate Mapping
+          </span>
+
+          <h5>
+            <a href="https://observablehq.com/d/7b271f18e7b1ec3b#chart"
+               target="_blank">
+
+              Bivariate Mapping
+
+            </a>
+          </h5>
+
+          <p>
             This bivariate choropleth map shows the relationship between obesity and physical inactivity across Erie County.
-            </p>
 
-            <details>
-                <summary>Show more</summary>
-                <p>
-                Dark blue and purple tones cluster in central Buffalo, especially near the Lake Erie shoreline, indicating areas where both variables are relatively high. Lighter and mixed colors appear in suburban and rural areas, suggesting more varied health conditions and a less uniform relationship between obesity and physical inactivity.
-                </p>
-            </details>
+Dark blue and purple tones cluster in central Buffalo, especially near the Lake Erie shoreline, indicating areas where both variables are relatively high. Lighter and mixed colors appear in suburban and rural areas, suggesting more varied health conditions and a less uniform relationship between obesity and physical inactivity.
+          </p>
+
         </div>
+      </div>
     </div>
 
-    <div class="project">
-        <h3>Flow Mapping</h3>
-        <a href="flowmap.html">
-            <img src="images/flow_map.png" alt="Flow map of Rwanda migration">
+    <!-- Small Multiple Choropleth Maps -->
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card">
+
+        <a href="https://observablehq.com/d/bc66e31cf53763c7" target="_blank">
+          <img src="images/smallmap.png"
+               alt="Small multiple choropleth maps">
         </a>
 
-        <div class="project-description">
-            <p>
-            This flow map shows internal migration flows in Rwanda in 2010, with thicker lines representing higher migration volume.
-            </p>
+        <div class="card-body">
 
-            <details>
-                <summary>Show more</summary>
-                <p>
-                The map shows Kigali as the main migration hub, receiving and sending the largest flows. Strong connections link Kigali with regions such as Ruhengeri, Kibuye, and Butare, creating a north-south pattern and a hub-and-spoke migration structure.
-                </p>
-            </details>
+          <span class="badge badge-custom mb-2">
+            Small Multiples
+          </span>
+
+          <h5>
+            <a href="https://observablehq.com/d/bc66e31cf53763c7"
+               target="_blank">
+
+              Small Multiple Visual Analytics
+
+            </a>
+          </h5>
+
+          <p>
+            <p>
+This visual analytics application combines small multiple choropleth mapping and comparative bar chart visualization to examine roadway conditions and deer–vehicle collision patterns across Colorado. The visualization compares spatial variation in average roadway speed alongside collision burden across roadway classifications, supporting exploratory analysis of transportation environments associated with elevated DVC risk.
+</p>
+          </p>
+
         </div>
+      </div>
     </div>
 
+    <!-- FINAL PROJECT FEATURE SECTION -->
+
+<div class="col-12">
+
+  <div class="card border-0 shadow-lg overflow-hidden rounded-4">
+
+    <div class="row g-0 align-items-center">
+
+      <!-- IMAGE -->
+
+      <div class="col-lg-7">
+
+        <a href="dvc-colorado-project\index.html">
+
+          <img src="images/finalproj.png"
+               alt="Colorado DVC final project"
+               class="img-fluid w-100 final-project-img">
+
+        </a>
+
+      </div>
+
+      <!-- TEXT -->
+
+      <div class="col-lg-5">
+
+        <div class="p-4 p-lg-5">
+
+          <span class="badge bg-danger mb-3 fs-6">
+            Featured Final Project
+          </span>
+
+          <h2 class="fw-bold mb-3">
+
+            <a href="dvc-colorado-project\index.html"
+               class="text-decoration-none text-dark">
+
+              Colorado Deer–Vehicle Collision Risk
+
+            </a>
+
+          </h2>
+
+          <p class="lead text-secondary">
+
+            An interactive geovisual analytics project examining deer–vehicle collision risk across Colorado using hotspot analysis, normalized risk mapping, interactive dot mapping, roadway corridor analysis, and coordinated visualization techniques.
+
+          </p>
+
+          <a href="dvc-colorado-project\index.html"
+             class="btn btn-dark btn-lg mt-3">
+
+            Explore Project
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
 
-<div class="link-section">
-    <h2>Explore More</h2>
-    <a href="shortbio.html">Akinwale's Portfolio</a>
-    <a href="cv.pdf" target="_blank">Download Curriculum Vitae</a>
-    <a href="mailto:akinwale-oladimeji@uiowa.edu">Contact Me</a>
-</div>
+
+
+<!-- ABOUT SECTION -->
+
+<section class="about-section py-5">
+
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <!-- IMAGE -->
+
+      <div class="col-lg-4 text-center">
+
+        <img src="images/akinwale.jpeg"
+             alt="Akinwale profile photo"
+             class="img-fluid rounded-circle profile-img shadow">
+
+      </div>
+
+      <!-- TEXT -->
+
+      <div class="col-lg-8">
+
+        <h2 class="section-title">
+          About Me
+        </h2>
+
+        <p class="lead">
+
+My name is Akinwale Oladimeji, and I am a PhD student in Geography at the University of Iowa. My academic and professional interests focus on geospatial analysis, geovisualization, GIS, and geospatial intelligence (GEOINT). I use tools such as ArcGIS, QGIS, Python, D3.js, and web-based mapping platforms to analyze and communicate spatial data.
+
+</p>
+
+<p>
+
+My research applies spatial thinking and interactive geovisual analytics to real-world environmental and transportation challenges, including wildlife–vehicle collisions and human–environment interactions. This portfolio showcases mapping and geovisualization projects developed using Observable, GIS, and modern web cartography techniques.
+
+</p>
+
+        <!-- BUTTONS -->
+
+        <div class="mt-4 d-flex flex-wrap gap-3">
+
+          <a href="cv.pdf"
+             target="_blank"
+             class="btn btn-dark btn-lg">
+
+            Download CV
+
+          </a>
+
+          <a href="mailto:your_email_here@gmail.com"
+             class="btn btn-outline-dark btn-lg">
+
+            Contact Me
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 </body>
 </html>
